@@ -14,7 +14,7 @@ sh "${mavenHome}/bin/mvn package"
 
 stage('3. CodeQuality') 
 {
-//sh "${mavenHome}/bin/mvn sonar:sonar"
+sh "${mavenHome}/bin/mvn sonar:sonar"
 }
 stage('4.UploadNexus') 
 {
